@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="admin-dash.html">Home</a>
+        <a href="add.html">Add student</a>
+        <a href="search.html" class="active">Search student</a>
+        <a href="attend.html">Attendance</a>
+        <a href="viewAttend.html">Reports</a>
+        <a href="admin-complaints.html">Complaint Box</a>
+    </div>
+
+    <button id="logoutBtn" data-firebase>LOGOUT
+        <i class="fa-solid fa-right-from-bracket"></i>
+    </button>
+
+    <div id="container">
+        <h3>Student Search panel</h3>
+
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Studentname or ID" name="Query" onkeyup="filterTable()">
+            <button id="submit">Search</button>
+        </div>
+
+        <div class="filter">
+            <label>City:</label>
+            <select name="city" onchange="filterTable()">
+                <option value="">Select</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Outside Maharashtra">Outside Maharashtra</option>
+                <option value="International">International</option>
+            </select>
+
+            <label>Class:</label>
+            <select name="class" onchange="filterTable()">
+                <option value="">select</option>
+                <option value="F.Y">F.Y</option>
+                <option value="S.Y">S.Y</option>
+                <option value="T.Y">T.Y</option>
+                <option value="Masters">Masters</option>
+            </select>
+
+            <label>Department:</label>
+            <select name="Department" onchange="filterTable()">
+                <option value="">select</option>
+                <option value="computer science">computer science</option>
+                <option value="Arts and Commerce">Arts and Commerce</option>
+                <option value="Science">Science</option>
+
+            </select>
+        </div>
+        <div class="table-scroll">
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Full Name</th>
+                        <th>Department</th>
+                        <th>Class</th>
+                        <th>contact number</th>
+                        <th>View Details</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+
+        <script type="module" src="firebase.js"></script>
+        <script type="module" src="search.js"></script>
+        <script type="module" src="nav.js"></script>
+        <script src="common.js"></script>
+
+        <div id="viewModal">
+
+            <div id="fullInfoContent">
+            </div>
+        </div>
+</body>
+
+</html>

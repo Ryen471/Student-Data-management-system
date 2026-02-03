@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dash.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="admin-dash.html" class="active">Home</a>
+        <a href="add.html">Add student</a>
+        <a href="search.html">Search student</a>
+        <a href="attend.html">Attendance</a>
+        <a href="viewAttend.html">Reports</a>
+        <a href="admin-complaints.html">Complaint Box</a>
+    </div>
+
+    <button id="logoutBtn">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></button>
+
+    <div id="container">
+        <div id="message">
+            <h3 id="title">Welcome, Admin</h3>
+            <p id="sub">Manage student records here.</p>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Student</h3>
+            <p id="totalCount">0</p>
+        </div>
+        <div class="card">
+            <h3>Department</h3>
+            <p>10</p>
+        </div>
+        <div class="card">
+            <h3>Course</h3>
+            <p>5</p>
+        </div>
+    </div>
+
+    <div class="bottom-sections-container">
+        <div class="recent-activity">
+            <h3>Recent Activity</h3>
+            <ul id="activitylist">
+            </ul>
+        </div>
+
+        <div class="recent-activity">
+            <h3>Admin Notice Board</h3>
+            <div class="notice-form">
+                <input type="text" id="noticeTitle" placeholder="Notice Title">
+                <textarea id="noticeMsg" placeholder="Message"></textarea>
+                <button id="postNoticeBtn">Post Notice</button>
+            </div>
+            <ul id="noticeList">
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="admin-dash.js"></script>
+    <script type="module" src="nav.js"></script>
+    <script type="module" src="common.js"></script>
+
+</body>
+
+</html>

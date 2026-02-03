@@ -1,0 +1,261 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 242, 242);
+    font-family: sans-serif;
+}
+
+
+.main-container {
+    height: 600px;
+    width: 1400px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 15px;
+    background: white;
+}
+
+
+.header {
+    background: purple;
+    height: 45px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.username {
+    height: 100px;
+    width: 75%;
+    position: relative;
+    border: none;
+    left: 150px;
+    top: 5%;
+    color: rgb(187, 99, 113);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+
+#small-conatainer {
+    height: 450px;
+    width: 75%;
+    position: relative;
+    left: 150px;
+    top: 25%;
+    display: flex;
+}
+
+
+.box {
+    background: ;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#notice {
+    margin-right: 3%;
+}
+
+
+#notice p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+#notice-title {
+    font-size: 13px;
+    margin-top: 8px;
+    color: black;
+    opacity: 0.9;
+}
+
+
+#std-profile {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+
+#complaint-box {
+    margin-left: 3%;
+}
+
+
+.footer {
+    height: 25px;
+    width: 100%;
+    background: purple;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    top: -10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    animation: popup 0.3s ease;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+.notice-item {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.notice-item:hover {
+    background: #f5f5f5;
+}
+
+.notice-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.notice-msg {
+    display: none;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.notice-item.active .notice-msg {
+    display: block;
+}
+
+#popup-notice-text {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+
+.box p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box p a {
+    display: block;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: purple;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+
+#notice-title {
+    font-size: 12px;
+    color: #666;
+}
+
+.header,
+.footer {
+    background: #e40bc8;
+
+}
+
+
+.box {
+    transition: transform 0.3s ease;
+    box-shadow 0.3s ease;
+}
+
+.box::before {
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(223, 7, 223, 0.25), transparent);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.role-card:hover::before {
+    opacity: 1;
+}
+
+
+.box:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0px 10px 25px rgba(106, 27, 154, 0.3);
+    cursor: pointer;
+}
+
+
+#small-conatainer {
+    gap: 40px;
+}
+
+
+.username h1 {
+    font-weight: 600;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

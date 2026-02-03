@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: azure;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.complaint-form {
+    max-width: 700px;
+    margin: auto;
+    background: linear-gradient(50deg, #fcdcfe, #add8ea);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #007BFF, #00C6FF);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.back-btn {
+    background: #555;
+    color: white;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+
+}
+
+button:hover {
+    opacity: 0.9;
+}

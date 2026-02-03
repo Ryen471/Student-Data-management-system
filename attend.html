@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Attendance</title>
+  <link rel="stylesheet" href="attend.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="admin-dash.html">Home</a>
+    <a href="add.html">Add student</a>
+    <a href="search.html">Search student</a>
+    <a href="attend.html" class="active">Attendance</a>
+    <a href="viewAttend.html">Reports</a>
+    <a href="admin-complaints.html">Complaint Box</a>
+  </div>
+
+  <button id="logoutBtn">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></button>
+
+  <div id="container">
+    <h3>Mark Student Attendance</h3>
+
+    <div class="subject-selection">
+      <label> Subject:</label>
+      <select id="subject-dropdown">
+        <option value="">-- Choose Subject --</option>
+        <option value="EVS">EVS</option>
+        <option value="OE">OE</option>
+        <option value="Math">Mathematics</option>
+        <option value="Adv_C">Advance C</option>
+        <option value="MC">Microcontroller</option>
+        <option value="ENG">English</option>
+        <option value="STBC">STBC</option>
+      </select>
+
+      <label>Class</label>
+      <select id="Class-dropdown">
+        <option value="">-- Choose Class --</option>
+        <option>F.Y</option>
+        <option>S.Y</option>
+        <option>T.Y</option>
+        <option>Masters</option>
+      </select>
+
+      <label>Department</label>
+      <select id="Department-dropdown">
+        <option value="">-- Choose Department --</option>
+        <option value="Computer science">Computer science</option>
+        <option value="Arts and Commerce">Arts and Commerce</option>
+        <option value="Science">Science</option>
+      </select>
+
+      <label>Select Date:</label>
+      <input type="date" id="search-date">
+    </div>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Student Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="attendanceTable"></tbody>
+    </table>
+
+    <center><button class="attendance-btn" onclick="saveAttendance()">Submit Attendance</button></center>
+  </div>
+
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="attend.js"></script>
+  <script type="module" src="nav.js"></script>
+</body>
+
+</html>

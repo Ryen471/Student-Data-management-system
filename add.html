@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="admin-dash.html" id="home">Home</a>
+        <a href="add.html" class="active" id="Add-student">Add student</a>
+        <a href="search.html">Search student</a>
+        <a href="attend.html">Attendance</a>
+        <a href="viewAttend.html">Reports</a>
+        <a href="admin-complaints.html">Complaint Box</a>
+    </div>
+
+    <button id="logoutBtn">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></button>
+
+    <div class="tags">
+        <h1 id="heading-h1">Add New Students Details</h1>
+    </div>
+
+    <div class="info-box">
+        <form id="studentForm">
+            <div class="personal-info">
+                <p id="personal-info-tag">Personal Details</p>
+                <div class="personal">
+                    <div class="input-box">
+                        <label class="input-field">Name of Student <font color="red">*</font></label><br>
+                        <input type="text" placeholder="student name " required id="std-name" class="input-field">
+                    </div>
+
+
+
+                    <div class="input-box">
+                        <label class="input-field">Father Name <font color="red">*</font></label><br>
+                        <input type="text" placeholder="Father Name" class="input-field" id="father-ipt-id">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Mother Name <font color="red">*</font></label><br>
+                        <input type="text" placeholder="Mother Name" class="input-field" id="mother-ipt-id">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Students E-mail <font color="red">*</font></label><br>
+                        <input type="email" placeholder="E-mail" class="input-field" id="std-email-id">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Mobile Number <font color="red">*</font></label><br>
+                        <input type="tel" placeholder="mobile" class="input-field" id="mobile-id" maxlength="10">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Date OF Birth <font color="red">*</font></label><br>
+                        <input type="date" class="input-field" id="dob-id">
+                    </div>
+
+                    <div class="input-box gender-box">
+                        <label class="input-field">Select Gender <font color="red">*</font></label><br><br>
+                        <input type="radio" name="gender" value="Male" id="male-id"> Male
+                        <input type="radio" name="gender" value="Female" id="female-id"> Female
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Aadhar Number</label><br>
+                        <input type="text" placeholder="Adhar Number" class="input-field" id="aadhar-id" maxlength="12">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Blood Group</label><br>
+                        <select class="select-box" id="blood-group">
+                            <option value="">Select</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="O+">O+</option>
+                            <option value="AB+">AB+</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Admission Date </label><br>
+                        <input type="date" class="input-field" id="admission-date">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Emergency Contact <font color="red"> *</font></label><br>
+                        <input type="tel" placeholder="Emergency Number" class="input-field" id="emergency-id"
+                            maxlength="10">
+                    </div>
+                </div>
+                <button type="button" class="next">Next</button>
+            </div>
+
+            <div class="Address">
+                <p id="personal-info-tag">Address</p>
+                <div class="personal">
+                    <div class="input-box">
+                        <label class="input-field">Residency Status <font color="red">*</font></label><br>
+                        <select class="select-box" id="country-status">
+                            <option value="">select</option>
+                            <option value="Indian">Maharashtra</option>
+                            <option value="Outside Maharashtra">Outside Maharashtra</option>
+                            <option value="NRI">International</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">Current Address <font color="red">*</font></label><br>
+                        <textarea rows="2" placeholder="Current Address" class="input-field"
+                            id="std-address"></textarea>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">State <font color="red">*</font></label><br>
+                        <input type="text" placeholder="State" class="input-field" id="state-id">
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">District <font color="red">*</font></label><br>
+                        <input type="text" placeholder="District" class="input-field" id="district-id">
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">Taluka <font color="red">*</font></label><br>
+                        <input type="text" placeholder="Taluka" class="input-field" id="taluka-id">
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">Village/City <font color="red">*</font></label><br>
+                        <input type="text" placeholder="City" class="input-field" id="city-id">
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">Pincode </label><br>
+                        <input type="number" placeholder="Pincode" class="input-field" id="pincode-id" maxlength="6">
+                    </div>
+                </div>
+                <button type="button" class="next-page">Next</button>
+            </div>
+
+            <div class="Academic-details">
+                <p id="personal-info-tag">Academic Details</p>
+                <div class="personal">
+                    <div class="input-box">
+                        <label class="input-field">10th Percentage/CGPA</label><br>
+                        <input type="text" placeholder="e.g. 85%" class="input-field" id="ssc-marks">
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">12th Percentage/Marks</label><br>
+                        <input type="text" placeholder="e.g. 78%" class="input-field" id="hsc-marks">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Degree Level <font color="red">*</font></label><br>
+                        <select class="select-box" id="degree-level">
+                            <option value="">Select Level</option>
+                            <option value="Bachelors">Bachelors (Undergraduate)</option>
+                            <option value="Masters">Masters (Postgraduate)</option>
+
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-field">Department <font color="red">*</font></label><br>
+                        <select class="select-box" id="dept-id">
+                            <option>Select</option>
+                            <option>Computer science</option>
+                            <option>Arts and Commerce</option>
+                            <option>Science</option>
+
+
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">Course <font color="red">*</font></label><br>
+                        <select class="select-box" id="course-id">
+                            <option>Select</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>B.Sc</option>
+                            <option>M.Sc</option>
+                            <option>Law</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-field">Class<font color="red">*</font> </label><br>
+                        <select class="select-box" id="year-id">
+                            <option>Select</option>
+                            <option>F.Y</option>
+                            <option>S.Y</option>
+                            <option>T.Y</option>
+                            <option>Masters</option>
+                        </select>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="nav.js"></script>
+    <script type="module" src="add.js"></script>
+</body>
+
+</html>

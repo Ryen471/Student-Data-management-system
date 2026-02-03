@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Complaints</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="admin-complaints.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="admin-dash.html" id="home">Home</a>
+        <a href="add.html">Add student</a>
+        <a href="search.html">Search student</a>
+        <a href="attend.html">Attendance</a>
+        <a href="viewAttend.html">Reports</a>
+        <a href="admin-complaints.html" class="active">Complaint Box</a>
+    </div>
+
+    <button id="logoutBtn">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></button>
+
+
+    <h1>Student Complaints</h1>
+
+    <div id="complaintContainer">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("rTdFCk0VQRxE6bvx-");
+        })();
+    </script>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="admin-complaints.js"></script>
+    <script type="module" src="nav.js"></script>
+</body>
+
+</html>

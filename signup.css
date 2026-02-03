@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: poppins;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    background: #f4f6fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#innerbox {
+    width: 400px;
+    padding: 50px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+label {
+    font-weight: bold;
+
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input::placeholder {
+    color: rgb(145, 140, 140);
+
+}
+
+a {
+    text-decoration: none;
+    font-size: medium;
+    color: blue;
+    transition: ease-in-out 0.2s;
+}
+
+a:hover {
+    color: blue;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 115px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    border: none;
+    background: rgb(0, 89, 255);
+    transition: ease-in-out 0.2;
+
+}
+
+button:hover {
+    background: rgb(48, 116, 242);
+    box-shadow: 0px 0px 5px rgb(76, 76, 76);
+}

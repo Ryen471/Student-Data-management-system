@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Attendance</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="std-attend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>MY ATTENDANCE</h2>
+
+        <div class="table-container">
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceData">
+
+                </tbody>
+            </table>
+        </div>
+
+        <p>Total Attendance: <span id="attendancePercent"></span>%</p>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="studentAttend.js"></script>
+</body>
+
+</html>

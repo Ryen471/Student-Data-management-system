@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="studentlog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="innerbox">
+
+            <i class="fas fa-user-graduate"></i>
+
+            <h2>Student</h2>
+            <form id="loginForm">
+                <input class="input" type="email" placeholder="Email" id="email" required>
+                <input class="input" type="password" placeholder="Password" id="password" required>
+
+                <label><input type="checkbox" id="RememberMe"> Remember me</label>
+
+                <button type="submit" id="submit">Log in</button>
+
+                <p class="anchor"><a href="forgot.html">forgot password</a></p>
+                <p class="anchor">Not have an account? <a href="signup.html">Sign up here</a></p>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="studentlog.js"></script>
+    <script src="common.js"></script>
+</body>
+
+</html>

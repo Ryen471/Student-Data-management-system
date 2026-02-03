@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #e0edf2;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    width: 80%;
+    min-height: 550px;
+    position: relative;
+    margin: 50px auto;
+    background: white;
+    padding-bottom: 30px;
+}
+
+#heading {
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.heading-div {
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(225, 220, 220);
+    padding-bottom: 30px;
+}
+
+.table-data {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #4ada4f;
+    color: white;
+}
+
+table th,
+table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.absent {
+    background: rgb(255, 33, 33);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.absent:hover {
+    background: rgb(213, 31, 31);
+}
+
+.present {
+    background: #4ada4f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.present:hover {
+    background: #38a73c;
+}
+
+
+
+
+.attendance-cb {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4ada4f;
+}
+
+
+
+@media (max-width: 900px) {
+    .portal-login {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        margin-top: 100px;
+    }
+}

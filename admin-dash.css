@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(255, 255, 255);
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: none;
+    height: 200px;
+}
+
+#message {
+    background: white;
+    border: none;
+    box-shadow: 0px 0px 10px #5a2d82;
+    height: 170px;
+    width: 700px;
+    border-radius: 20px;
+    transition: ease-in 0.2s;
+
+}
+
+#message:hover {
+    scale: 1.1;
+
+}
+
+#title {
+
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+
+#sub {
+
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40px;
+    ;
+}
+
+.cards {
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 100px;
+
+
+}
+
+.card {
+    background-color: white;
+    height: 120px;
+    width: 420px;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 10px #e0e0e0;
+
+
+}
+
+p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.recent-activity {
+    background: #ffffff;
+    width: 320px;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity:hover {
+    scale: 1.05;
+}
+
+.recent-activity h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #5a2d82;
+}
+
+#activitylist {
+    list-style: none;
+    padding: 0;
+}
+
+#activitylist li {
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+.bottom-sections-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.recent-activity {
+    background: white;
+    width: 450px;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.recent-activity h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a2d82;
+    font-size: 20px;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+}
+
+
+.notice-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    background: #fdfbff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #f0e6f7;
+}
+
+.notice-form input,
+.notice-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.notice-form input:focus,
+.notice-form textarea:focus {
+    border-color: #5a2d82;
+    box-shadow: 0 0 5px rgba(90, 45, 130, 0.1);
+}
+
+.notice-form textarea {
+    height: 70px;
+    resize: none;
+}
+
+#postNoticeBtn {
+    background-color: #5a2d82;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#postNoticeBtn:hover {
+    background-color: #451a66;
+    transform: translateY(-2px);
+}
+
+
+#activitylist,
+#noticeList {
+    list-style: none;
+    padding: 0;
+}
+
+#activitylist li,
+#noticeList li {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#activitylist li {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+#noticeList li strong {
+    color: #333;
+    font-size: 15px;
+    display: block;
+}
+
+#noticeList li p {
+    font-size: 13px;
+    color: #666;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+#activitylist li i {
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.delete-notice {
+    padding: 4px 10px;
+    font-size: 12px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.delete-notice:hover {
+    background-color: #c0392b;
+}

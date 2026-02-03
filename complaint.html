@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Box</title>
+    <link rel="stylesheet" href="complaint.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <h1>Complaint Box</h1>
+
+    <form class="complaint-form" id="complaintForm">
+        <div class="box-1">
+            <button class="back-btn" onclick="window.location.href='std-dash.html'">
+                <i class="fa-solid fa-arrow-left"></i> Back
+            </button>
+            <label class="Std-name">Student Name:</label>
+            <input type="text" name="StudentName" placeholder="Name" id="Std-name" required>
+
+            <label class="std-class">Class:</label>
+            <select id="std-class" class="std-class" required>
+                <option>Select</option>
+                <option>F.Y</option>
+                <option>S.Y</option>
+                <option>T.Y</option>
+            </select>
+            <label class="std-course">Course</label>
+            <select id="std-course" class="std-course" required>
+                <option>Select</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>B.Sc</option>
+                <option>M.Sc</option>
+                <option>Law</option>
+            </select>
+
+            <label class="std-depart">Department:</label>
+            <select id="std-depart" class="std-depart" required>
+                <option>Select</option>
+                <option>Computer Science</option>
+                <option>Arts and Commerce</option>
+                <option>Science</option>
+            </select>
+        </div>
+
+        <div class="box-2">
+            <label class="student-complaint">Complaint:</label>
+            <textarea id="student-complaint" cols="80" rows="10" placeholder="Write your complaint here..."
+                required></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="complaint.js"></script>
+</body>
+
+</html>

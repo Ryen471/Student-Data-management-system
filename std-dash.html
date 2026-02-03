@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="std-dash.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="header">
+            <button id="logoutBtn">LOGOUT <i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+
+        <div class="username">
+            <h1 id="welcomeText">Welcome,</h1>
+        </div>
+
+        <div id="small-conatainer">
+
+            <div class="box" id="notice">
+                <p>
+                    <a href="javascript:void(0)">Notice</a>
+                    <span id="notice-indicator" style="display:none; color:red; font-size:18px;">●</span>
+                </p>
+
+                <div id="notice-text" style="font-size:12px; margin-top:4px;">
+                    No notice available
+                </div>
+            </div>
+
+            <div class="box" id="std-profile">
+                <p><a href="student-view.html">Profile</a></p>
+            </div>
+
+            <div class="box" id="complaint-box">
+                <p><a href="complaint.html">Complaint</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Student Dashboard</p>
+        </div>
+
+    </div>
+
+    <div id="noticeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeNotice">&times;</span>
+            <h3>📢 Latest Notice</h3>
+            <div id="popup-notice-text">No notice available</div>
+        </div>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="std-dash.js"></script>
+    <script type="module" src="nav.js"></script>
+</body>
+
+</html>

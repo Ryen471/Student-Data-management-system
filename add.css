@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eee;
+    padding: 20px;
+}
+
+#heading-h1 {
+    color: gray;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.personal-info,
+.Address,
+.Academic-details {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#personal-info-tag {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+.personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-box {
+    width: 100%;
+}
+
+
+.input-field,
+.select-box,
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+
+}
+
+
+
+.gender-box {
+    grid-column: span 2;
+    margin: 10px 0;
+}
+
+.input-gender {
+    margin-right: 10px;
+}
+
+
+.next,
+.next-page,
+.submit-btn {
+    background: rgb(11, 241, 11);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    float: right;
+}
+
+.submit-btn {
+    background: #28a745;
+}
+
+.next:hover,
+.submit-btn:hover {
+    background: rgb(3, 149, 3);
+}
+
+
+.personal-info::after,
+.Address::after,
+.Academic-details::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .portal-login {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        margin-top: 100px;
+    }
+}

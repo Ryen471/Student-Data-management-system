@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>User Login</title>
+     <link rel="stylesheet" href="adminlog.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+     <div id="container">
+          <div id="innerbox">
+               <i class="fa-solid fa-user-tie"> </i>
+               <h2>Admin Login</h2>
+
+               <form id="admin-loginForm">
+                    <input class="input" type="email" placeholder="Email" id="email" required>
+                    <input class="input" type="password" placeholder="Password" id="password" required>
+
+                    <label><input type="checkbox" id="RememberMe"> Remember me</label>
+
+                    <button type="submit" id="submit">Log in</button>
+
+
+               </form>
+          </div>
+     </div>
+     <script type="module" src="firebase.js"></script>
+     <script type="module" src="adminlog.js"></script>
+     <script src="common.js"></script>
+</body>
+
+</html>

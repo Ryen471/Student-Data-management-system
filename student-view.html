@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student-view.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-left">
+
+            <button class="back-btn" onclick="window.location.href='std-dash.html'"> Back </button>
+
+            <h2 class="page-title">Student Details</h2>
+            <p id="name" class="student-name">Student Name: </p>
+            <p class="roll">Roll No: <span id="roll"></span></p>
+
+            <div class="section">
+                <h3>Personal Details</h3>
+                <p>DOB: <span id="dob"></span></p>
+                <p>Gender: <span id="gender"></span></p>
+                <p>Blood Group: <span id="bloodGroup"></span></p>
+                <p>Aadhar No: <span id="aadhar"></span></p>
+                <p>Parents Name: <span id="parentsName"></span></p>
+            </div>
+
+            <div class="section">
+                <h3>Academic Details</h3>
+                <p>Admission Date: <span id="admDate"></span></p>
+                <p>Course: <span id="course"></span></p>
+                <p>Department: <span id="department"></span></p>
+                <p>Class: <span id="class"></span></p>
+            </div>
+
+            <div class="section">
+                <h3>Contact Details</h3>
+                <p>Mobile: <span id="mobile"></span></p>
+                <p>Emergency: <span id="emergency"></span></p>
+                <p>Email: <span id="email"></span></p>
+            </div>
+
+            <div class="section">
+                <h3>Address</h3>
+                <p>City: <span id="city"></span></p>
+                <p>State: <span id="state"></span></p>
+                <p>Taluka: <span id="taluka"></span></p>
+                <p>Pincode: <span id="pincode"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="student-view.js"></script>
+</body>
+
+</html>
